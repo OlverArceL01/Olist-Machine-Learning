@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: poetry run prepare-data
+    deps:
+    - path: src/olist_ml/data.py
+      hash: md5
+      md5: 41196a66628c7492325a3b745e439d99
+      size: 242

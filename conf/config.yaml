@@ -1,0 +1,5 @@
+defaults:
+  - override hydra/job_logging: custom
+project:
+  root_path: ${hydra:runtime.cwd}
+  epoch: 10
