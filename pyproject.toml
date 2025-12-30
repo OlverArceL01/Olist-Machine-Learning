@@ -14,7 +14,14 @@ dependencies = [
     "seaborn (>=0.13.2,<0.14.0)",
     "scikit-learn (>=1.8.0,<2.0.0)",
     "jupyterlab (>=4.5.1,<5.0.0)",
-    "ruff (>=0.14.10,<0.15.0)"
+    "ruff (>=0.14.10,<0.15.0)",
+    "sqlalchemy (>=2.0.45,<3.0.0)",
+    "google-cloud-storage (>=3.7.0,<4.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "pyarrow (>=22.0.0,<23.0.0)",
+    "google-cloud-bigquery (>=3.39.0,<4.0.0)",
+    "google-cloud-bigquery-storage (>=2.36.0,<3.0.0)",
+    "pandas-gbq (>=0.32.0,<0.33.0)"
 ]
 
 [tool.poetry]
@@ -33,5 +40,5 @@ dev = [
 
 
 [tool.poetry.scripts]
-run-pipeline = "olist_ml.main:main"
-prepare-data = "olist_ml.data:main"
+run_extract_pipeline = "olist_ml.pipelines.extract.main:main"
+run_preprocessing_pipeline = "olist_ml.pipelines.preprocessing.main:main"

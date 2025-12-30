@@ -1,5 +1,32 @@
 defaults:
   - override hydra/job_logging: custom
+
 project:
   root_path: ${hydra:runtime.cwd}
-  epoch: 10
+  google_cloud:
+    project_id: studying-gcp-ml
+    bucket_name: studying-gcp-ml-olist-bucket
+    source_blob: ingestion/olist.zip
+
+paths:
+  raw_data: data/raw
+  interim_data: data/interim
+  processed_data: data/processed
+  models_data: data/models
+  external_data: data/external
+
+files:
+  olist_zip: olist.zip
+  olist_sqlite: olist.sqlite
+  orders_extract_parquet: orders.extract.parquet
+  order_items_extract_parquet: order_items.extract.parquet
+  products_extract_parquet: products.extract.parquet
+  customers_extract_parquet: customers.extract.parquet
+  product_category_name_translation_extract_parquet: product_category_name_translation.extract.parquet
+
+  orders_normalize_parquet: orders.normalize.parquet
+  order_items_normalize_parquet: order_items.normalize.parquet
+  products_normalize_parquet: products.normalize.parquet
+  customers_normalize_parquet: customers.normalize.parquet
+  product_category_name_translation_normalize_parquet: product_category_name_translation.normalize.parquet
+  base_dataset_parquet: base_dataset.parquet
