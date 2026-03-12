@@ -1,1 +1,48 @@
-site_name: My Docs
+site_name: "Olist E-commerce ML Docs"
+site_description: "Olist E-commerce Machine Learning Documentation"
+site_author: "Olver Arce Limache"
+
+theme:
+  name: material
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Business Understanding:
+      - Problem Definition: ./business_understanding/problem_definition.md
+  - Data Understanding:
+      - Describe Data: ./data_understanding/describe_data.md
+      - Explore Data Demand Forecasting: ./data_understanding/explore_data_demand_forecasting.md
+      - Explore Data Customer Segmentation: ./data_understanding/explore_data_customer_segmentation.md
+      - Verify Data Quality: ./data_understanding/verify_data_quality.md
+  - Data Preparation:
+      - Select Data: ./data_preparation/select_data.md
+      - Clean Data: ./data_preparation/clean_data.md
+      - Construct Data: ./data_preparation/construct_data.md
+      - Format Data: ./data_preparation/format_data.md
+  - Modeling:
+      - Modeling: ./modeling/modeling.md
+  - Evaluation:
+      - Evaluation: ./evaluation/evaluation.md
+  - Deployment:
+      - Deployment: ./deployment/deployment.md
