@@ -8,7 +8,7 @@ Ir a [`docs/index.md`](https://github.com/OlverArceL01/olist-ml/blob/main/docs/i
    ```
 3. Activar el entorno
    ```bash
-  poetry shell
+   poetry shell
    ```
 4. Se require tener instalado [Google Cloud CLI](https://docs.cloud.google.com/sdk/docs/install-sdk)
 5. Abrir el archivo `conf/config.yaml` para ajustar nombres y rutas de los recursos de Google Cloud, y rutas de los archivos a utilizar.
